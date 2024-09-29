@@ -1,0 +1,37 @@
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1200px) and (max-width: 1399px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .browser_con h2 {
+        font-size: 33px;
+    }
+
+    .browser_con p {
+        font-size: 16px;
+    }
+
+    .browser_icon i {
+        font-size: 20px;
+    }
+
+    .browser_list li p {
+        font-size: 16px;
+    }
+
+    .browser_img {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 576px) and (max-width: 767px) {}
+
+@media (max-width: 575px) {
+    .btn_Fe {
+        font-size: 18px;
+        padding: 10px 39px;
+    }
+}

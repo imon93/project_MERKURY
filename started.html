@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started Form</title>
+    <link rel="stylesheet" href="assets/get_started/css/all.min.css">
+    <link rel="stylesheet" href="assets/get_started/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Get Started</h2>
+        <form id="getStartedForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="GB">United Kingdom</option>
+                <option value="AU">Australia</option>
+                <option value="BD">Bangladesh</option>
+                <option value="IN">India</option>
+                <!-- Add more countries as needed -->
+            </select>
+
+            <label for="phone">Phone Number:</label>
+            <div class="phone-group">
+                <select id="countryCode" name="countryCode" required>
+                    <option value="">Code</option>
+                    <option value="+1">+1 (US, Canada)</option>
+                    <option value="+44">+44 (UK)</option>
+                    <option value="+61">+61 (Australia)</option>
+                    <option value="+880">+880 (BD)</option>
+                    <option value="+91">+91 (India)</option>
+                    <!-- Add more country codes as needed -->
+                </select>
+                <input type="number" id="phone" name="phone" placeholder="Your phone number" required>
+            </div>
+
+            <label for="password">Password:</label>
+            <div class="password-group">
+                <input type="password" id="password" name="password" placeholder="Your password" required>
+                <span class="toggle-password" title="Show/Hide Password"><i class="fas fa-eye"></i></span>
+            </div>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <div class="password-group">
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                <span class="toggle-password" title="Show/Hide Password"><i class="fas fa-eye"></i></span>
+            </div>
+
+            <button type="submit" id="submitBtn">Get Started</button>
+        </form>
+        <div id="formMessage"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/get_started/js/script.js"></script>
+</body>
+</html>

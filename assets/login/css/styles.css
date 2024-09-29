@@ -1,0 +1,157 @@
+:root {
+    --primary_color: #0d1935;
+    --secondary_color: #5284ff;
+    --B_B_color: #233972;
+    --B_C_color: #5584ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+#login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.password-group {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 65%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.actions {
+    margin-bottom: 15px;
+}
+
+.actions a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.actions a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    display: none;
+    margin-top: 5px;
+}
+
+.login-btn, .reset-btn {
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary_color);
+    color: white;
+    border: 2px solid var(--B_B_color);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.login-btn:hover, .reset-btn:hover {
+    background-color: transparent;
+    color: var(--B_C_color);
+    font-weight: bold;
+    border: 2px solid var(--B_B_color);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.modal-content h3 {
+    padding-bottom: 10px;
+}
+
+.modal-content p {
+    padding-bottom: 15px;
+}
+
+.modal-content input {
+    width: 85%;
+    padding: 08px;
+}
+
+.modal-content button {
+    margin: 20px 0;
+}

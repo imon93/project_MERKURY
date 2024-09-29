@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--primary_color);
+    /* background-color: #f4f4f4; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="password"], select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 20px); /* Adjusting for padding */
+}
+
+.phone-group {
+    display: flex;
+}
+
+.phone-group select {
+    width: 40%;
+    margin-right: 10px;
+}
+
+.password-group {
+    position: relative;
+}
+
+.password-group input {
+    width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+}
+
+button {
+    font-weight: bold;
+    padding: 10px;
+    background-color: var(--primary_color);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    border: 2px solid var(--B_C_color);
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+button:hover {
+    font-weight: bold;
+    color: var(--secondary_color);
+    background-color: transparent;
+    border: 2px solid var(--B_B_color);
+}
+
+#formMessage {
+    margin-top: 20px;
+    color: #28a745;
+    text-align: center;
+}
+
+:root {
+    --primary_color: #0d1935;
+    --secondary_color: #5284ff;
+    --B_B_color: #233972;
+    --B_C_color: #5584ff;
+}
